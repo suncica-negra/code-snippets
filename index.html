@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Code Snippets</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Intellegens Candidate testing">
+      <meta name="keywords" content="JavaScript">
+      <meta name="author" content="O.K.">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script async src="test_1.js"></script>
+      <style type="text/css">
+         .hidden {
+         display: none;
+         }
+         h1 {
+         text-align: center;
+         text-shadow: 0 0 3px #FF0000;
+         }
+         div.card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+         .footer {
+         text-align: center;
+         color: grey;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container col-lg-6">
+         <br><br>
+         <h1>Code Snippets</h1>
+         <br><br>
+         <div class="card">
+            <h5 class="card-header">Convert &#9851;</h5>
+            <div class="card-body">
+               <h5 class="card-title">Convert a number from one base to another</h5>
+               <input id="txtNumber" type="text" placeholder="Number" />
+               <input id="txtFromBase" type="number" placeholder="From Base" min="1" max="16" step="1" />
+               <input id="txtToBase" type="number" placeholder="To Base" min="1" max="16" step="1" />
+               <br><br>
+               <button id="btnConvert" class="btn btn-outline-info">Convert</button>
+               <br><br>
+               <span id="Result"></span>
+            </div>
+         </div>
+         <br>
+         <div class="card">
+            <h5 class="card-header">Format &#128259;</h5>
+            <div class="card-body">
+               <h5 class="card-title">Format Number</h5>
+               <span>Format the number </span>
+               <input id="number" type="number" placeholder="Number" step="1" min="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+               <br><br>
+               <span>by placing a dot after each </span>
+               <input id="step" type="number" placeholder="Step" step="1" min="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+               <span>digit(s).</span>
+               <br><br>
+               <button onclick="format()" id="convert" class="btn btn-outline-info">Convert</button>
+               <br><br>
+               <span id="result"></span>
+            </div>
+         </div>
+         <br>
+         <div class="card">
+            <h5 class="card-header">Unformat &#128260;</h5>
+            <div class="card-body">
+               <h5 class="card-title">Unformat Number</h5>
+               <input id="num" type="text" placeholder="Number with commas" />
+               <br><br>
+               <button onclick="unformatNumber()" class="btn btn-outline-primary">Unformat Number</button>
+               <br><br>
+               <p id="demo1" class="card-text"></p>
+            </div>
+         </div>
+         <br>
+         <div class="card">
+            <h5 class="card-header">Parse Families &#128106;</h5>
+            <div class="card-body">
+               <h5 class="card-title">Group family members</h5>
+               <button onclick="parseFamilies()" id="parse" class="btn btn-outline-success">Parse Families</button>
+               <button onclick="buttonClick()" id="next" class="hidden btn btn-outline-success">Next family</button> <input id="counter" value="0" hidden />
+               <br><br>
+               <p id="demo"></p>
+               <p id="demo2"></p>
+            </div>
+         </div>
+         <br><br>
+      </div>
+      <div class="footer">
+         <small>
+            Copyright &#169; <script>document.write(new Date().getFullYear());</script>.
+         </small>
+         <br>
+         <small>Powered by <strong><a href="https://github.com/suncica-negra?tab=repositories" target="_blank" class="orhidea">DEA</a></strong></small>
+      </div>
+      <br>
+   </body>
+</html>
